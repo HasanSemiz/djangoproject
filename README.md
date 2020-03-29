@@ -1,1 +1,1 @@
-"#Django Araba Alçm Satçm Projesi" 
+"#Django Araba Alim Satim Projesi" 
