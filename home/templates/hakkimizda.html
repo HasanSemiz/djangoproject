@@ -1,0 +1,106 @@
+{% extends "homebase.html" %}
+{% load static %}
+{% block title %}{{  setting.company }}{% endblock %}
+{% block keywords %}{{  setting.keywords }}{% endblock %}
+{% block description %}{{  setting.description }}{% endblock %}
+
+{% block head %}
+    <link rel="icon" sizes="32x32"   type="image/png" href='{{ setting.icon.url }}' />
+
+{% endblock %}
+
+
+{% block content %}
+  <div class="page-title" style="background-image: url({% static 'images/background01.jpg' %});">
+			<div class="inner">
+				<div class="container">
+					<div class="title">HAKKIMIZDA</div> <!-- end .title -->
+				</div> <!-- end .container -->
+			</div> <!-- end .inner -->
+		</div> <!-- end .page-title -->
+
+		<section class="section white">
+			<div class="inner">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-7">
+							<img src="{% static 'images/about.jpg' %}" alt="about" class="img-responsive">
+						</div> <!-- end .col-sm-7 -->
+						<div class="column-spacer"></div>
+						<div class="col-sm-5">
+                            {{ setting.aboutus | safe }}
+							</div> <!-- end .col-sm-5 -->
+					</div>
+				</div> <!-- end .container -->
+			</div> <!-- end .inner -->
+		</section> <!-- end .section -->
+
+		<section class="section light">
+			<div class="inner">
+				<div class="container">
+					<div id="team-slider" class="owl-carousel team-slider">
+						<div class="item">
+							<div class="team-member" style="background-image: url({% static 'images/team01.jpg' %});">
+								<div class="about">
+									<span class="name">John Smith</span><span class="title">Selling Team Head</span>
+									<div class="social-icons">
+										<a href=""><i class="fa fa-google-plus"></i></a>
+										<a href=""><i class="fa fa-facebook"></i></a>
+										<a href=""><i class="fa fa-twitter"></i></a>
+									</div> <!-- end .social-icons -->
+								</div> <!-- end .about -->
+							</div> <!-- end .team-member -->
+						</div> <!-- end .item -->
+						<div class="item">
+							<div class="team-member" style="background-image: url({% static 'images/team02.jpg'%});">
+								<div class="about">
+									<span class="name">John Smith</span><span class="title">Selling Team Head</span>
+									<div class="social-icons">
+										<a href=""><i class="fa fa-google-plus"></i></a>
+										<a href=""><i class="fa fa-facebook"></i></a>
+										<a href=""><i class="fa fa-twitter"></i></a>
+									</div> <!-- end .social-icons -->
+								</div> <!-- end .about -->
+							</div> <!-- end .team-member -->
+						</div> <!-- end .item -->
+						<div class="item">
+							<div class="team-member" style="background-image: url({% static 'images/team03.jpg'%});">
+								<div class="about">
+									<span class="name">John Smith</span><span class="title">Selling Team Head</span>
+									<div class="social-icons">
+										<a href=""><i class="fa fa-google-plus"></i></a>
+										<a href=""><i class="fa fa-facebook"></i></a>
+										<a href=""><i class="fa fa-twitter"></i></a>
+									</div> <!-- end .social-icons -->
+								</div> <!-- end .about -->
+							</div> <!-- end .team-member -->
+						</div> <!-- end .item -->
+						<div class="item">
+							<div class="team-member" style="background-image: url({% static 'images/team04.jpg'%});">
+								<div class="about">
+									<span class="name">John Smith</span><span class="title">Selling Team Head</span>
+									<div class="social-icons">
+										<a href=""><i class="fa fa-google-plus"></i></a>
+										<a href=""><i class="fa fa-facebook"></i></a>
+										<a href=""><i class="fa fa-twitter"></i></a>
+									</div> <!-- end .social-icons -->
+								</div> <!-- end .about -->
+							</div> <!-- end .team-member -->
+						</div> <!-- end .item -->
+						<div class="item">
+							<div class="team-member" style="background-image: url({% static 'images/team02.jpg'%});">
+								<div class="about">
+									<span class="name">John Smith</span><span class="title">Selling Team Head</span>
+									<div class="social-icons">
+										<a href=""><i class="fa fa-google-plus"></i></a>
+										<a href=""><i class="fa fa-facebook"></i></a>
+										<a href=""><i class="fa fa-twitter"></i></a>
+									</div> <!-- end .social-icons -->
+								</div> <!-- end .about -->
+							</div> <!-- end .team-member -->
+						</div> <!-- end .item -->
+					</div> <!-- end .team-slider -->
+				</div> <!-- end .container -->
+			</div> <!-- end .inner -->
+		</section> <!-- end .section -->
+{% endblock %}

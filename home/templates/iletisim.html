@@ -1,0 +1,30 @@
+{% extends "homebase.html" %}
+{% load static %}
+{% block title %}{{  setting.company }}{% endblock %}
+{% block keywords %}{{  setting.keywords }}{% endblock %}
+{% block description %}{{  setting.description }}{% endblock %}
+
+{% block head %}
+    <link rel="icon" sizes="32x32"   type="image/png" href='{{ setting.icon.url }}' />
+
+{% endblock %}
+
+
+{% block content %}
+  <div class="page-title" style="background-image: url({% static 'images/background01.jpg' %});">
+			<div class="inner">
+				<div class="container">
+					<div class="title">İLETİŞİM</div> <!-- end .title -->
+				</div> <!-- end .container -->
+			</div> <!-- end .inner -->
+		</div> <!-- end .page-title -->
+
+		<section class="section white">
+			<div class="inner">
+				<div class="container">
+					 {{ setting.contact | safe }}
+				</div> <!-- end .container -->
+			</div> <!-- end .inner -->
+		</section> <!-- end .section -->
+
+{% endblock %}
