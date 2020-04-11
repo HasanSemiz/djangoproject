@@ -22,9 +22,36 @@
 		<section class="section white">
 			<div class="inner">
 				<div class="container">
-					 {{ setting.contact | safe }}
+					<div class="row">
+						<div class="col-md-6">
+							<div class="billing-details">
+                                <div class="section-title">
+                                    <h3 class="title">İletişim Formu</h3>
+                                </div>
+
+                                {% if messages %}
+                                  {% for message in messages %}
+                                     <div class="alert alert-{{ message.tags }}" role="alert">
+                                         {{ message }}
+                                     </div>
+                                  {% endfor %}
+                                {%  endif %}
+
+                                 <form action="" method="post">
+                                     {% csrf_token %}
+                                     {{ form.as_p }}
+                                     <input type="submit" value="SEND FORM">
+                                 </form>
+
+
+                            </div>
+						</div> <!-- end .col-sm-7 -->
+						<div class="column-spacer"></div>
+						<div class="col-md-6">
+                            {{ setting.contact | safe }}
+                        </div> <!-- end .col-sm-5 -->
+					</div>
 				</div> <!-- end .container -->
 			</div> <!-- end .inner -->
 		</section> <!-- end .section -->
-
 {% endblock %}
