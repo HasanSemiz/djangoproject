@@ -19,6 +19,15 @@
 				</div> <!-- end .container -->
 			</div> <!-- end .inner -->
   </div> <!-- end .page-title -->
+    <div id="breadcrumb">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="/">ANASAYFA</a></li>
+                <li class="active">{{ categorydata.title }}</li>
+            </ul>
+
+         </div>
+    </div>
     <section class="section small-top-padding white">
 			<div class="inner">
 				<div class="container">
@@ -26,7 +35,6 @@
 						<div class="col-sm-9">
 							<div class="listings">
 								<div class="heading clearfix">
-
 									<div class="view">
 										<a href="listing-list-view.html"><i class="fa fa-th-list"></i></a>
 										<a href="listing-grid-view.html" class="active"><i class="fa fa-th"></i></a>
@@ -43,9 +51,9 @@
 								<div class="listings-grid clearfix">
 									{% for rs in products %}
                                     <div class="listing">
-										<div class="image"><a href="/product/{{ rs.id }}/{{ rs.slug }}"><img src="{{ rs.image.url }}" alt="listing" class="img-responsive"></a></div>
+										<div class="image"><a href="/product/{{ rs.id }}/{{ rs.slug }}"><img src="{{ rs.image.url }}" style="height: 200px" alt="listing" class="img-responsive"></a></div>
 										<div class="content">
-											<div class="title"><a href="details.html">{{ rs.title }}<span></span></a></div>
+											<div class="title"><a href="/product/{{ rs.id }}/{{ rs.slug }}">{{ rs.title }}<span></span></a></div>
 											<p>{{ rs.description }}</p>
 											<div class="price">$ {{ rs.price }}<span>/Satılık</span></div>
 										</div>

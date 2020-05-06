@@ -1,0 +1,69 @@
+{% extends "homebase.html" %}
+{% load mptt_tags %}
+{% load static %}
+{% block title %}{{  product.title }}{% endblock %}
+{% block keywords %}{{  product.keywords }}{% endblock %}
+{% block description %}{{  product.description }}{% endblock %}
+
+{% block head %}
+    <link rel="icon" sizes="32x32"   type="image/png" href='{{ setting.icon.url }}' />
+
+{% endblock %}
+
+
+{% block content %}
+  <div class="page-title" style="background-image: url({% static 'images/background01.jpg' %});">
+			<div class="inner">
+				<div class="container">
+					<div class="title">{{  product.description }}</div> <!-- end .title -->
+				</div> <!-- end .container -->
+			</div> <!-- end .inner -->
+  </div> <!-- end .page-title -->
+  <div id="breadcrumb">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="/">ANASAYFA</a></li>
+                <li><a href="/category/{{ product.category_id }}/{{ product.category.slug }}">{{ product.category }}</a></li>
+                <li class="active">{{ product.description }}</li>
+            </ul>
+
+         </div>
+    </div>
+
+   <section class="section white">
+			<div class="inner">
+				<div class="container">
+					<div class="car-details">
+						<div class="row">
+							<div class="col-sm-8">
+								<div class="clearfix">
+									<div class="title">{{ product.description }}<span></span></div>
+									<div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div>
+								</div>
+								<div id="car-details-slider" class="image">
+									{% for rs in images %}
+                                    <div class="item"><img src="{{ rs.image.url }}" alt="alt" class="img-responsive"></div>
+									{% endfor %}
+								</div>
+								<div class="tabpanel border" role="tabpanel">
+									<div class="tab-content">
+                                        <p>{{ product.detail | safe }}</p>
+
+									</div> <!-- end .tab-content -->
+								</div> <!-- end .tabpanel -->
+							</div> <!-- end .col-sm-8 -->
+							<div class="col-sm-4">
+
+								<div class="price">${{ product.price }} <span>/ Satılık</span>
+								</div> <!-- end .main-car-details -->
+
+							</div> <!-- end .col-sm-4 -->
+						</div> <!-- end .row -->
+					</div> <!-- end .car-details -->
+				</div> <!-- end .container -->
+			</div> <!-- end .inner -->
+   </section> <!-- end .section -->
+
+
+
+{% endblock %}

@@ -1,22 +1,26 @@
-{% load static %}
-<a>ARABALAR</a>
 {% load mptt_tags %}
-<ul class="list-unstyled">
-    {% recursetree category %}
-        <li class="">
-        <li><a class="dropdown dropright" {% if not node.is_leaf_node %}
-               data-toggle="dropdown"
-               aria-expanded="true" {% endif %}
-               href="/category/{{ node.id }}/{{ node.slug }}"> {{ node.title }}</a>
+
+<li>
+    <a href="/">ARABALAR</a>
+    <ul>
+        {% recursetree category %}
+
+            {% if  node.is_leaf_node %}
+
+
+                    <li><a href="/category/{{ node.id }}/{{ node.slug }}">{{ node.title }}</a></li>
+
+
+            {% endif %}
+
+
             {% if not node.is_leaf_node %}
 
-                <ul class="dropdown-menu pull-menu-right">
-                    <li>
-                        <a href="/category/{{ node.slug }}">{{ children }}</a>
-                    </li>
-                </ul>
+                <li><a href="/category/{{ node.id }}/{{ node.slug }}">{{ node.title }}</a>
+                <ul>{{ children }} </ul></li>
+
             {% endif %}
-        </li>
-        </li>
-    {% endrecursetree %}
-</ul>
+
+        {% endrecursetree %}
+    </ul>
+</li>
