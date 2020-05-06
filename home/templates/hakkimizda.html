@@ -1,4 +1,5 @@
 {% extends "homebase.html" %}
+{% load mptt_tags %}
 {% load static %}
 {% block title %}{{  setting.company }}{% endblock %}
 {% block keywords %}{{  setting.keywords }}{% endblock %}
@@ -29,6 +30,7 @@
 						<div class="column-spacer"></div>
 						<div class="col-sm-5">
                             {{ setting.aboutus | safe }}
+
 							</div> <!-- end .col-sm-5 -->
 					</div>
 				</div> <!-- end .container -->
