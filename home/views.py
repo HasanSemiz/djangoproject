@@ -11,12 +11,17 @@ from product.models import Product, Category
 
 def index(request):
     setting = Setting.objects.get(pk=1)
-    sliderdata = Product.objects.all()[:4]
+    sliderdata = Product.objects.all()[:6]
     category = Category.objects.all()
+    lastproducts = Product.objects.all().order_by('-id')[:10]
+
+
     context = {'setting':setting,
                'category':category,
                'page': 'home',
-               'sliderdata':sliderdata }
+               'sliderdata':sliderdata,
+               'lastproducts': lastproducts,
+               }
     return render(request, 'index.html', context)
 
 
