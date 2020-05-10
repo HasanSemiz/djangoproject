@@ -3,7 +3,7 @@ from unicodedata import category
 
 from django.contrib.auth import logout, authenticate, login
 
-from .forms import SearchForm
+from .forms import SearchForm, SignUpForm
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.contrib import messages
@@ -146,4 +146,29 @@ def login_view(request):
     }
 
     return render(request, 'login.html', context)
+
+
+
+def signup_view(request):
+    if request.method == 'POST':
+          form=SignUpForm(request.POST)
+          if form.is_valid():
+              form.save()
+              username = form.cleaned_data.get('username')
+              password = form.cleaned_data.get('password1')
+              user = authenticate(username=username,password=password)
+              login(request, user)
+              return HttpResponseRedirect('/')
+
+
+
+
+    form = SignUpForm()
+    category = Category.objects.all()
+    context = {
+        'category': category,
+        'form' : form,
+    }
+
+    return render(request, 'signup.html', context)
 
