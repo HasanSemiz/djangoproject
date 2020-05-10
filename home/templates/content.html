@@ -1,4 +1,22 @@
 {% load static %}
+<script>
+
+  $(function() {
+    $("#query").autocomplete({
+      source: "/search_auto/",
+      select: function (event, ui) {
+        AutoCompleteSelectHandler(event, ui)
+      },
+      minLength: 2,
+    });
+  });
+
+  function AutoCompleteSelectHandler(event, ui)
+  {
+    var selectedObj = ui.item;
+  }
+
+</script>
 <section class="section dark tiny">
 			<div class="inner">
 				<div class="container">
@@ -11,35 +29,32 @@
 
 
 						<div class="tab-content">
-							<div role="tabpanel" class="tab-pane fade in active" id="search-cars">
-								<form action="" method="post" class="banner-form">
-									<div class="item">
+                            <div class="header">
+											 <form action="/search/" method="post">
+                                             {% csrf_token %}
+                                             <input id="query" name="query" class="src-input" type="text"placeholder="Arama " >
+
+                                             {% load mptt_tags %}
+
+                                             <select name="catid" class="input search-categories">
+                                                 <option value="0">Arabalar</option>
+                                                {% recursetree category %}
+
+                                                {% if  node.is_leaf_node %}
+                                                       <li><a href="/category/{{ node.id }}/{{ node.slug }}">{{ node.title }}</a></li>
+                                                {% endif %}
+                                                {% if not node.is_leaf_node %}
+                                                    <li><a href="/category/{{ node.id }}/{{ node.slug }}">{{ node.title }}</a>
+                                                    <ul>{{ children }} </ul></li>
+
+                                                {% endif %}
+                                                {% endrecursetree %}
+                                             </select>
+
+                                             </form>
+                            </div>
 
 
-									</div> <!-- end .item -->
-
-
-								</form> <!-- end .banner-form -->
-							</div> <!-- end .tab-panel -->
-							<div role="tabpanel" class="tab-pane fade" id="sell-car">
-								<form action="" method="post" class="banner-form">
-									<div class="item">
-										<input type="text" placeholder="Brand">
-									</div> <!-- end .item -->
-									<div class="item">
-										<input type="text" placeholder="Model">
-									</div> <!-- end .item -->
-									<div class="item">
-										<input type="text" placeholder="Year">
-									</div> <!-- end .item -->
-									<div class="item">
-										<input type="text" placeholder="Price">
-									</div> <!-- end .item -->
-									<div class="item">
-										<button type="submit" class="button solid light-blue">Submit</button>
-									</div> <!-- end .item -->
-								</form> <!-- end .banner-form -->
-							</div> <!-- end .tab-panel -->
 						</div> <!-- end .tab-content -->
 					</div> <!-- end .tabpanel -->
 				</div> <!-- end .container -->

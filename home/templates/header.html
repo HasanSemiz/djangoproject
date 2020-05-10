@@ -1,5 +1,7 @@
 {% load static %}
 {% load mptt_tags %}
+
+
 <header class="header">
 			<div class="container">
 				<div class="navigation clearfix">
@@ -26,13 +28,8 @@
                             </li>
 							<li><a href="/iletisim">İLETİŞİM</a></li>
                             <li>
-                                 <div class="header">
-											 <form action="/search/" method="post">
-                                             {% csrf_token %}
-                                             <input id="query" name="query" class="src-input" type="text"placeholder="Arama " >
 
-                                             </form>
-										</div> <!-- end .select-wrapper -->
+
 							</li>
 						</ul>
 					</nav> <!-- end .main-nav -->
