@@ -1,0 +1,59 @@
+{% extends "homebase.html" %}
+{% load static %}
+{% block title %}{{  setting.company }}{% endblock %}
+{% block keywords %}{{  setting.keywords }}{% endblock %}
+{% block description %}{{  setting.description }}{% endblock %}
+
+{% block head %}
+    <link rel="icon" sizes="32x32"   type="image/png" href='{{ setting.icon.url }}' />
+
+{% endblock %}
+
+
+{% block content %}
+  <div class="page-title" style="background-image: url({% static 'images/background01.jpg' %});">
+			<div class="inner">
+				<div class="container">
+					<div class="title">GİRİŞ YAP</div> <!-- end .title -->
+				</div> <!-- end .container -->
+			</div> <!-- end .inner -->
+		</div> <!-- end .page-title -->
+
+		<section class="section white">
+			<div class="inner">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5">
+							<div class="billing-details">
+                                <div class="section-title">
+                                    <h3 class="title">Üye Girişi</h3>
+                                </div>
+
+                                {% if messages %}
+                                  {% for message in messages %}
+                                     <div class="alert alert-{{ message.tags }}" role="alert">
+                                         {{ message }}
+                                     </div>
+                                  {% endfor %}
+                                {%  endif %}
+
+                                 <form action="" method="post">
+                                     {% csrf_token %}
+                                    <div class="form-group">
+                                        <input class="input" type="text" name="username" placeholder="Kullanıcı Adı">
+                                    </div>
+                                     <div class="form-group">
+                                        <input class="input" type="password" name="password" placeholder="Şifre">
+                                    </div>
+                                     <input type="submit" value="GİRİŞ">
+                                 </form>
+
+
+                            </div>
+						</div> <!-- end .col-sm-7 -->
+
+					</div>
+				</div> <!-- end .container -->
+			</div> <!-- end .inner -->
+		</section> <!-- end .section -->
+{% endblock %}

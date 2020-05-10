@@ -6,11 +6,8 @@
 			<div class="container">
 				<div class="navigation clearfix">
 					<div class="logo"><a href="index.html"><img src="{% static 'images/logo.png'%}" alt="Automan" class="img-responsive"></a></div> <!-- end .logo -->
-					<div class="login"><a href=""><i class="ion-ios-person"></i></a></div> <!-- end .login -->
-					<div class="contact">
-						<div class="line"></div>
-						<a href="contact-us.html"><i class="fa fa-phone"></i></a>
-					</div> <!-- end .contact -->
+
+
 					<nav class="main-nav">
 						<ul class="list-unstyled">
 							<li>
@@ -26,11 +23,29 @@
 							<li>
 								<a href="/referanslar">REFERANSLAR</a>
                             </li>
-							<li><a href="/iletisim">İLETİŞİM</a></li>
+                            <li><a href="/iletisim">İLETİŞİM</a></li>
+
                             <li>
 
+                                    {% if user.id is not None %}
+                                        <a href="/user/"><b style="color: #f0ad4e"><i class="ion-ios-person">   </i> {{ user.first_name }} {{ user.last_name }}</b></a>
+                                        <ul>
+                                            <li><a href="/">Hesabım</a></li>
+                                            <li><a href="/">İstekler</a></li>
+                                            <li><a href="/">Paylaşımlar</a></li>
+                                            <li><a href="/logout/"><b>ÇIKIŞ</b></a></li>
+                                        </ul>
 
-							</li>
+
+                                    {% else %}
+                                        <a href="/login/"><b style="color: #f0ad4e">GİRİŞ</b></a>
+                                        <a href="/join/"><b style="color: #f0ad4e">KAYIT OL</b></a>
+
+                                    {% endif %}
+
+
+                            </li>
+
 						</ul>
 					</nav> <!-- end .main-nav -->
 					<a href="" class="responsive-menu-open"><i class="fa fa-bars"></i></a>

@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e3657a0-8b89-4ab4-b58b-9a26a1a0bf07" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/home/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project2/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,12 +65,12 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Django\project2\home\templates\images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Django\project2\home\templates" />
       <recent name="C:\Django\project2\product" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Django\project2\home\templates\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -144,7 +146,7 @@
       <workItem from="1588769439516" duration="14217000" />
       <workItem from="1588791322529" duration="6888000" />
       <workItem from="1589025446858" duration="28029000" />
-      <workItem from="1589111413255" duration="7598000" />
+      <workItem from="1589111413255" duration="15984000" />
     </task>
     <task id="LOCAL-00001" summary="readme değişti">
       <created>1585491198679</created>
@@ -251,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589117341513</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="otomatik slug oluşturma">
+      <created>1589123688673</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1589123688673</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +279,8 @@
     <MESSAGE value="Ürün Yorum ekleme" />
     <MESSAGE value="Arama özelliği eklendi" />
     <MESSAGE value="otomatik arama özelliği" />
-    <option name="LAST_COMMIT_MESSAGE" value="otomatik arama özelliği" />
+    <MESSAGE value="otomatik slug oluşturma" />
+    <option name="LAST_COMMIT_MESSAGE" value="otomatik slug oluşturma" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="75" key="#Notifications" timestamp="1585491462129">
@@ -285,10 +295,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="883" y="166" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1589063814094" />
-    <state x="406" y="12" key="CommitChangelistDialog2" timestamp="1589117339778">
+    <state x="406" y="12" key="CommitChangelistDialog2" timestamp="1589123687168">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="406" y="12" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589117339778" />
+    <state x="406" y="12" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589123687168" />
     <state x="828" y="143" key="FileChooserDialogImpl" timestamp="1582982869267">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -297,10 +307,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="559" y="31" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582982890254" />
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1589117343203">
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1589123690082">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589117343203" />
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589123690082" />
     <state x="425" y="106" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588345728921">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
