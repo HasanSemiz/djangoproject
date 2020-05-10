@@ -1,0 +1,61 @@
+{% extends "homebase.html" %}
+{% load mptt_tags %}
+{% load static %}
+{% block title %}{% endblock %}
+{% block keywords %}{{  categorydata.keywords }}{% endblock %}
+{% block description %}{{  categorydata.description }}{% endblock %}
+
+{% block head %}
+    <link rel="icon" sizes="32x32"   type="image/png" href='{{ setting.icon.url }}' />
+
+{% endblock %}
+
+
+{% block content %}
+  <div class="page-title" style="background-image: url({% static 'images/background01.jpg' %});">
+			<div class="inner">
+				<div class="container">
+					<div class="title">SONUÇLAR</div> <!-- end .title -->
+				</div> <!-- end .container -->
+			</div> <!-- end .inner -->
+		</div> <!-- end .page-title -->
+    <div id="breadcrumb">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="/">ANASAYFA</a></li>
+                <li class="active">{{ categorydata.title }}</li>
+            </ul>
+
+         </div>
+    </div>
+
+		<section class="section white">
+			<div class="inner">
+				<div class="container">
+					<div class="row">
+                        <table cellpadding="3" width="1200">
+                            <tr>
+                                <th>Resim</th>
+                                <th>Araç Adı</th>
+                                <th>Kategori</th>
+                                <th>Ücret</th>
+                            </tr>
+                            {% for rs in products %}
+                            <tr>
+                                <td><a href="/product/{{ rs.id }}/{{ rs.slug }}"><img src="{{ rs.image.url }}" style="height: 200px; width:300px"> </a> </td>
+                                <td><h4 class="product-name"><a href="/product/{{ rs.id }}/{{ rs.slug }}">{{ rs.title }}</a> </h4> </td>
+                                <td><a href="/category/{{ rs.category.id }}/{{ rs.category.slug }}">{{ rs.category }}</a> </td>
+                                <td><h4>${{ rs.price }}</h4></td>
+                            </tr>
+                            {% endfor %}
+                        </table>
+
+
+
+					</div>
+				</div> <!-- end .container -->
+			</div> <!-- end .inner -->
+		</section> <!-- end .section -->
+
+
+{% endblock %}

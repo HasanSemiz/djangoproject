@@ -1,5 +1,6 @@
 from unicodedata import category
 
+from .forms import SearchForm
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.contrib import messages
@@ -82,3 +83,21 @@ def product_detail(request,id,slug):
 
                }
     return render(request,'product_detail.html',context)
+
+def product_search(request):
+    if request.method == 'POST':
+        form = SearchForm(request.POST)
+        if form.is_valid():
+            category= Category.objects.all()
+            query = form.cleaned_data['query']
+            products = Product.objects.filter(title__icontains=query)
+
+            context = {
+                'products': products,
+                'category': category,
+                'query': query
+            }
+
+            return render(request, 'products_search.html', context)
+
+        return HttpResponseRedirect('/')

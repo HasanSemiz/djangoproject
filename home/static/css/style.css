@@ -1234,7 +1234,7 @@ label .required {
 	position: absolute;
 	top: 33px;
 	left: 0;
-	width: 100%;
+	width: 150px;
 	z-index: 9;
 }
 .navigation .logo {

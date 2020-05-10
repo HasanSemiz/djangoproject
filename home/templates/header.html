@@ -14,17 +14,6 @@
 							<li>
 								<a href="/">ANASAYFA</a>
 							</li>
-							<li>
-								<a href="add-car-details.html">ARABA EKLE</a>
-								<ul>
-									<li><a href="add-car-details.html">Add Car Details</a></li>
-									<li><a href="choose-specification.html">Choose Specification</a></li>
-									<li><a href="contact-details.html">Contact Details</a></li>
-									<li><a href="photos-videos.html">Photos Videos</a></li>
-									<li><a href="pay-publish.html">Pay Publish</a></li>
-								</ul>
-							</li>
-
                             <li>
                               {% block sidebar %}{% include "sidebar.html" %}{% endblock %}
                             </li>
@@ -36,6 +25,15 @@
 								<a href="/referanslar">REFERANSLAR</a>
                             </li>
 							<li><a href="/iletisim">İLETİŞİM</a></li>
+                            <li>
+                                 <div class="header">
+											 <form action="/search/" method="post">
+                                             {% csrf_token %}
+                                             <input id="query" name="query" class="src-input" type="text"placeholder="Arama " >
+
+                                             </form>
+										</div> <!-- end .select-wrapper -->
+							</li>
 						</ul>
 					</nav> <!-- end .main-nav -->
 					<a href="" class="responsive-menu-open"><i class="fa fa-bars"></i></a>
