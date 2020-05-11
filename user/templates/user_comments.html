@@ -1,0 +1,102 @@
+{% extends "homebase.html" %}
+{% load static %}
+{% block title %}{{  setting.company }}{% endblock %}
+{% block keywords %}{{  setting.keywords }}{% endblock %}
+{% block description %}{{  setting.description }}{% endblock %}
+
+{% block head %}
+    <link rel="icon" sizes="32x32"   type="image/png" href='{{ setting.icon.url }}' />
+
+{% endblock %}
+
+
+{% block content %}
+  <div class="page-title" style="background-image: url({% static 'images/background01.jpg' %});">
+			<div class="inner">
+				<div class="container">
+					<div class="title">KULLANICI PROFİLİ</div> <!-- end .title -->
+				</div> <!-- end .container -->
+			</div> <!-- end .inner -->
+		</div> <!-- end .page-title -->
+
+<div id="breadcrumb">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="/">ANASAYFA</a></li>
+                <li class="active">YORUMLAR</li>
+            </ul>
+
+         </div>
+    </div>
+		<section class="section white">
+			<div class="inner">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-2">
+
+
+                            {% include "user_panel.html" %}
+
+
+                        </div> <!-- end .col-sm-7 -->
+
+                        <div class="column-spacer"></div>
+
+                        <div class="col-md-10">
+                            <div class="billing-details">
+
+                                <div class="car-details alt">
+
+                                    <div class="specifications clearfix">
+                                        <h2>Yorumlar</h2>
+
+                                        <img src="{% static 'images/details.png'%}" alt="background" class="bg">
+                                        <div class="content">
+                                            <div class="">
+                                                <table class="-shopping-cart-table table">
+                                                    <tr>
+                                                        <th class="text-left">Araç</th>
+                                                        <th class="text-left">Konu</th>
+                                                        <th class="text-left">Yorum</th>
+                                                        <th class="text-left">Statü</th>
+                                                        <th class="text-left">Tarih</th>
+                                                        <th class="text-left">Detay</th>
+                                                    </tr>
+                                                    {% for rs in comments %}
+                                                    <tr>
+                                                        <th class="text-left">
+                                                            <a href="/product/{{ rs.product_id }}/{{ rs.product.slug }}">
+                                                            {{ rs.product.title }}
+                                                            </a>
+                                                        </th>
+                                                        <th class="text-left">{{ rs.subject }}</th>
+                                                        <th class="text-left">{{rs.comment}}</th>
+                                                        <th class="text-left">{{rs.status}}</th>
+                                                        <th class="text-left">{{rs.create_at}}</th>
+                                                        <th class="text-left"> <a class="button solid yellow size1" href="/user/deletecomment/{{ rs.id }}" onclick="return confirm('Silmek istediğine emin misin ?')" >Sil</a></th>
+                                                    </tr>
+                                                    {% endfor %}
+                                                </table>
+
+
+
+
+                                            </div> <!-- end .row -->
+                                        </div> <!-- end .content -->
+                                    </div> <!-- end .specifications -->
+                                </div>
+
+
+
+
+
+                            </div>
+
+                        </div> <!-- end .col-sm-5 -->
+
+                    </div>
+                </div> <!-- end .container -->
+			</div> <!-- end .inner -->
+		</section> <!-- end .section -->
+{% endblock %}

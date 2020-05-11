@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e3657a0-8b89-4ab4-b58b-9a26a1a0bf07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/user/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/templates/change_password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/templates/user_update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/templates/user_comments.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/content.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/templates/user_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user_profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/templates/user_panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user_panel.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +54,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/user" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/user/templates" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -69,8 +65,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Django\project2\user" />
       <recent name="C:\Django\project2\user\templates" />
+      <recent name="C:\Django\project2\user" />
       <recent name="C:\Django\project2\user\migrations" />
       <recent name="C:\Django\project2\home\templates" />
       <recent name="C:\Django\project2\product" />
@@ -153,7 +149,7 @@
       <workItem from="1588791322529" duration="6888000" />
       <workItem from="1589025446858" duration="28029000" />
       <workItem from="1589111413255" duration="23167000" />
-      <workItem from="1589195662745" duration="22601000" />
+      <workItem from="1589195662745" duration="27889000" />
     </task>
     <task id="LOCAL-00001" summary="readme değişti">
       <created>1585491198679</created>
@@ -295,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589205190015</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="üye bilgileri şifre güncelleme">
+      <created>1589223981533</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1589223981533</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +322,8 @@
     <MESSAGE value="user kayıt" />
     <MESSAGE value="üye profili ile ek bilgiler" />
     <MESSAGE value="üye paneli oluşturuldu" />
-    <option name="LAST_COMMIT_MESSAGE" value="üye paneli oluşturuldu" />
+    <MESSAGE value="üye bilgileri şifre güncelleme" />
+    <option name="LAST_COMMIT_MESSAGE" value="üye bilgileri şifre güncelleme" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="75" key="#Notifications" timestamp="1585491462129">
@@ -334,10 +338,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="883" y="166" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1589063814094" />
-    <state x="406" y="12" key="CommitChangelistDialog2" timestamp="1589205187321">
+    <state x="406" y="12" key="CommitChangelistDialog2" timestamp="1589223979506">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="406" y="12" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589205187321" />
+    <state x="406" y="12" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589223979506" />
     <state x="828" y="143" key="FileChooserDialogImpl" timestamp="1582982869267">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -346,10 +350,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="559" y="31" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582982890254" />
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1589205193330">
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1589223984096">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589205193330" />
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589223984096" />
     <state x="425" y="106" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588345728921">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
