@@ -1,0 +1,91 @@
+{% extends "homebase.html" %}
+{% load static %}
+{% block title %}{{  setting.company }}{% endblock %}
+{% block keywords %}{{  setting.keywords }}{% endblock %}
+{% block description %}{{  setting.description }}{% endblock %}
+
+{% block head %}
+    <link rel="icon" sizes="32x32"   type="image/png" href='{{ setting.icon.url }}' />
+
+{% endblock %}
+
+
+{% block content %}
+  <div class="page-title" style="background-image: url({% static 'images/background01.jpg' %});">
+			<div class="inner">
+				<div class="container">
+					<div class="title">PROFİL GÜNCELLEME</div> <!-- end .title -->
+				</div> <!-- end .container -->
+			</div> <!-- end .inner -->
+		</div> <!-- end .page-title -->
+
+<div id="breadcrumb">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="/">ANASAYFA</a></li>
+                <li class="active">PROFİL</li>
+            </ul>
+
+         </div>
+    </div>
+		<section class="section white">
+			<div class="inner">
+				<div class="container">
+					<div class="row">
+
+                        <div class="col-md-2">
+
+
+                                {% include "user_panel.html" %}
+
+
+						</div> <!-- end .col-sm-7 -->
+
+						<div class="column-spacer"></div>
+
+                        <div class="col-md-10">
+                            <div class="billing-details">
+
+                                <div class="car-details alt">
+
+                                <div class="specifications clearfix">
+                                    <h2>Kullanıcı Bilgileri</h2>
+
+                                    <img src="{% static 'images/details.png'%}" alt="background" class="bg">
+                                    <div class="content">
+                                        <div class="item clearfix">
+                                                    <div class=""><img src="{{ user.userprofile.image.url }}" style="height: 120px; weight:100px "></div>
+
+                                                </div> <!-- end .item -->
+
+                                               <form method="POST" enctype="multipart/form-data">
+                                                   {% csrf_token %}
+                                                   <fieldset class="form-group">
+                                                       {{ user_form.as_p }}
+                                                       {{ profile_form.as_p }}
+                                                   </fieldset>
+                                                   <div class="form-group">
+                                                       <button class="button solid yellow size1" type="submit">Güncelleme</button>
+
+                                                   </div>
+                                               </form>
+
+
+
+                                    </div> <!-- end .content -->
+                                </div> <!-- end .specifications -->
+                                </div>
+
+
+
+
+
+
+
+                            </div> <!-- end .col-sm-5 -->
+
+					</div>
+				</div> <!-- end .container -->
+			</div> <!-- end .inner -->
+		</section> <!-- end .section -->
+{% endblock %}
