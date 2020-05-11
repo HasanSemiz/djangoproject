@@ -23,16 +23,17 @@
 					<div class="tabpanel border section-tab" role="tabpanel">
 						<ul class="nav nav-tabs" role="tablist">
 							<li role="presentation" class="active"><a href="#search-cars" aria-controls="search-cars" role="tab" data-toggle="tab">Search Cars</a></li>
-							<li role="presentation"><a href="#sell-car" aria-controls="sell-car" role="tab" data-toggle="tab">Sell Car</a></li>
 						</ul> <!-- end .nav-tabs -->
 
 
 
 						<div class="tab-content">
-                            <div class="header">
-											 <form action="/search/" method="post">
+                            <div class="row">
+                              <div class="col-md-4">
+											 <form class="search-form" action="/search/" method="post">
                                              {% csrf_token %}
-                                             <input id="query" name="query" class="src-input" type="text"placeholder="Arama " >
+                                             <input id="query" name="query" class="src-input" type="search"placeholder="Arama " >
+                                             <button type="submit"><i class="fa fa-search"></i></button>
 
                                              {% load mptt_tags %}
 
@@ -52,6 +53,7 @@
                                              </select>
 
                                              </form>
+                              </div>
                             </div>
 
 

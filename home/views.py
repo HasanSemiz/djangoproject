@@ -15,7 +15,7 @@ from product.models import Product, Category, Images, Comment
 
 def index(request):
     setting = Setting.objects.get(pk=1)
-    sliderdata = Product.objects.all()[:6]
+    sliderdata = Product.objects.all()[:10]
     category = Category.objects.all()
     lastproducts = Product.objects.all().order_by('-id')[:10]
 
