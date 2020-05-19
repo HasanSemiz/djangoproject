@@ -72,6 +72,7 @@ def iletisim(request):
     return render(request, 'iletisim.html', context)
 
 def category_products(request,id,slug):
+    setting = Setting.objects.get(pk=1)
     category = Category.objects.all()
     categorydata = Category.objects.get(pk=id)
     menu = Menu.objects.all()
@@ -79,11 +80,13 @@ def category_products(request,id,slug):
     context = {'products':products,
                'category':category,
                'categorydata':categorydata,
-               'menu': menu
+               'menu': menu,
+               'setting': setting,
                }
     return render(request,'products.html',context)
 
 def product_detail(request,id,slug):
+    setting = Setting.objects.get(pk=1)
     category = Category.objects.all()
     menu = Menu.objects.all()
     product = Product.objects.get(pk=id)
@@ -95,6 +98,7 @@ def product_detail(request,id,slug):
                'images': images,
                'comments':comments,
                 'menu': menu,
+               'setting': setting,
               #  'profile':profile
                }
     return render(request,'product_detail.html',context)
@@ -103,6 +107,7 @@ def product_search(request):
     if request.method == 'POST':
         form = SearchForm(request.POST)
         if form.is_valid():
+            setting = Setting.objects.get(pk=1)
             category= Category.objects.all()
             menu = Menu.objects.all()
             query = form.cleaned_data['query']
@@ -116,7 +121,8 @@ def product_search(request):
                 'products': products,
                 'category': category,
                 'query': query,
-                'menu': menu
+                'menu': menu,
+                'setting': setting,
             }
 
             return render(request, 'products_search.html', context)
@@ -153,12 +159,13 @@ def login_view(request):
         else:
             messages.warning(request, "Giriş Hatası! Kullanıcı adı veya şifre yanlış ")
             return HttpResponseRedirect('/login')
-
+    setting = Setting.objects.get(pk=1)
     category = Category.objects.all()
     menu = Menu.objects.all()
     context = {
         'category': category,
-        'menu' : menu
+        'menu' : menu,
+        'setting': setting,
     }
 
     return render(request, 'login.html', context)
@@ -182,14 +189,15 @@ def signup_view(request):
               data.save()
               messages.success(request, "Kayıt Gerçekleşti!")
               return HttpResponseRedirect('/')
-
+    setting = Setting.objects.get(pk=1)
     form = SignUpForm()
     category = Category.objects.all()
     menu = Menu.objects.all()
     context = {
         'category': category,
         'form' : form,
-        'menu': menu
+        'menu': menu,
+        'setting': setting,
     }
 
     return render(request, 'signup.html', context)
@@ -197,7 +205,7 @@ def signup_view(request):
 def contentdetail(request,id,slug):
     category = Category.objects.all()
     menu= Menu.objects.all()
-
+    setting = Setting.objects.get(pk=1)
     try:
         content = Content.objects.get(pk=id)
         images = CImages.objects.filter(content_id=id)
@@ -205,7 +213,8 @@ def contentdetail(request,id,slug):
             'content':content,
             'category':category,
             'menu ': menu,
-            'images':images
+            'images':images,
+            'setting': setting,
         }
         return render(request,'content_detail.html',context)
     except:
@@ -225,10 +234,12 @@ def menu(request,id):
 
 
 def error(request):
+    setting = Setting.objects.get(pk=1)
     category = Category.objects.all()
     menu = Menu.objects.all()
     context = {
         'category': category,
-        'menu ': menu
+        'menu ': menu,
+        'setting': setting,
     }
     return render(request, 'error_page.html', context)

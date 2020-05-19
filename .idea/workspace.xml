@@ -2,198 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e3657a0-8b89-4ab4-b58b-9a26a1a0bf07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/migrations/0007_auto_20200518_2103.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/migrations/0008_auto_20200518_2104.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/migrations/0009_auto_20200518_2105.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/content_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/error_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/migrations/0005_auto_20200518_2320.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/migrations/0006_auto_20200518_2323.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/migrations/0007_auto_20200518_2333.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/migrations/0008_comment_userprofile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/migrations/0009_auto_20200518_2351.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/migrations/0010_auto_20200518_2354.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/migrations/0011_remove_comment_userprofile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/09de1c8ed6cf86f1e080b11084689d47.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/0x0-test-opel-insignia-grand-sport-16-cdti-6at-1502956291042.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/1485187525GT_001.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/1485187525GT_002.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/155674468194515645_1249x.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/1_N2W1BzC.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/1_cfU0sg9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2014-mercedes-benz-s-class-configurator-goes-online-67375-7_20RISoo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2014-mercedes-benz-s-class-configurator-goes-online-67375-7_EEnGmLA.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2014-mercedes-benz-s-class-configurator-goes-online-67375-7_bgLPPGP.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2014-mercedes-benz-s-class-configurator-goes-online-67375-7_mi4SJfO.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2016-ferrari-488-gtb_100562482.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2017-opel-insignia-grand-sport.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2017_aston_martin_db11_frosted_glass_blue_35.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2018-Ferrari-812-Superfast-MOTOR-review.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2019-ferrari-portofino-black.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2019-peugeot-3008-gt-suv-red-1200x800-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2019-volvo-s60_100655633_h.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2019-volvo-v60-first-drive.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2019_land-rover_range-rover_4dr-suv_autobiography_fq_oem_2_500.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2019_land-rover_range-rover_4dr-suv_autobiography_fq_oem_2_500_bWoUXuv.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/002.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/002_thumb.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/003.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/003_thumb.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/004.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/004_thumb.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/005.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/005_thumb.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/akayev.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/akayev_thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/atomsan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/atomsan_thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/beyazesyam.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/beyazesyam_thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/beyazesyamerkezi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/beyazesyamerkezi_thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/cabani.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/cabani_thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/cabukkitap.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/cabukkitap_thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/cosmogross.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/cosmogross_thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/eliftuning.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/eliftuning_VkCYknl.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/eliftuning_VkCYknl_thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/eliftuning_thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/etechbayi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/etechbayi_thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/gm3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/gm3_thumb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/gugukoutdoor.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/gugukoutdoor_thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/homestore-logo1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/homestore-logo1_thumb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/ki_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/ki_3_thumb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/kitapiste.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/kitapiste_thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/kuyumcu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/kuyumcu_thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/manche.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/manche_thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/markafarma.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/markafarma_thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/popculture.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/popculture_thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/vekem-logoresponsive.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/vekem-logoresponsive_thumb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/yemkitapevi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/yemkitapevi_thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/yerevdekor.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/yerevdekor_thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/zuhalmuzik-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/zuhalmuzik-logo_thumb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/zuzu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020/05/19/zuzu_thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/2020_land_rover_range_rover_sport_hybrid_plug-in_hse_4wd-pic-6110229320059064366-_AO3WNnW.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/230220181125129674787.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/426b15b001a60c29aa491421c0c08872.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/59647dbac525502304212030_p1107003_DCD6cya.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/59647dbac525502304212030_p1107003_LzspqA2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/59647dbac525502304212030_p1107003_OePxiQ4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/59647dbac525502304212030_p1107003_Zo5LMkL.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/6602d3bc6ed44623a19bcf1bb0e9ebc0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/79c070029e87ceb44e56facbffaa3d9a.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/Auto-feature-01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/BNG13_Range_Rover_Sport-2-1563352743.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/Basliksiz-1-Kurtarildi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/Ferrari-812-GTS-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/Peugeot-3008-SUV-2019-700x336.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/Range-Rover-Sport-Front-Grille-Picture-3-750x375.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/Range-rover-1-480x320-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/Tom-Scanlan-reviews-the-latest-Audi-A8-50-TDI-luxury-sports-saloon-3-1500x843.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/Volvo-S90-2.0-D-D5-otv-750x410.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/a43.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/a_porsche_gt3_00.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/a_porsche_gt3_01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/a_porsche_gt3_02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/ask219.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/aston-martin-db11-otv-fiyati.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/aston-martin-db11_0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/aston-martin-dbs-superle-79d4f27.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/aston-martin-dbs-superleggera.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/aston-martin-modelleri.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/audi-a8-50tdi-hard-cornering.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/audi-a8-50tdi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/ferrari-488-fiyati.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/ferrari-488-gtb-rt-2016-web-0032.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/ferrari-488-gtb-rt-2016-web-0033.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/ferrari-car.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/gordon_ramsay_ferrari_812-750x375.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/grigio_silverstone_740-Dick_Lovett_Swindon-ZFF89FPC000252188-1024-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/gt3rs-675lt-083.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/gt3rs-675lt-105.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/images_1_cvsKpGK.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/images_1_ujItMpq.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/images_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/images_3NSfBqY.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/images_a5uK0dm.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/images_mWAnKdL.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/images_mezKQ8S.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/images_mjUrw06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/img-1-400x175.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/iste-yeni-opel-insignia-2017-ilk-resimleri-or-9042152_o.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/land_rover-range_rover_sport-phev_02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/landroverrangeroversport1017.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/maxresdefault_cf8WU9H.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/mercedes-g63-b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/nuova-audi-a4-avant-2020-cover-mobile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/o315.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/porsche-gt3-rs-rt-026.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/range-rover-rechargeable-p400e.jpg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/thumb-1920-709653.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/thumb-1920-920609.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/thumb2-opel-insignia-grand-sport-2017-black-opel-sports-sedan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/unnamed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/unnamed_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/unnamed_FFdTq9F.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/unnamed_QROjXFa.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/users/001.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/users/002_jMFtvzn.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/users/003.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/users/004_SJKICY8.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/users/005.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/wheelsandmore-ferrari-812-superfast.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/001.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/2014-mercedes-benz-s-class-configurator-goes-online-67375-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/Ekran_Görüntüsü_6_VM24zEQ.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/arac-alirken-dikkat-etmeniz-gerekenler_q1gvgx_OCY5F33.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/ogretmen_tQumvLW.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/templates/content_gallery.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/templates/user_addcontent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/templates/user_contents.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/images/team01.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/content.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/hakkimizda.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/hakkimizda.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/iletisim.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/iletisim.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/product_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/products.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/products_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/products_search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/migrations/0002_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/migrations/0002_product.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project2/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/templates/user_comments.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user_comments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/templates/user_panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user_panel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/templates/user_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user_profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -367,7 +181,7 @@
       <workItem from="1589718095690" duration="20479000" />
       <workItem from="1589821704550" duration="9008000" />
       <workItem from="1589832736187" duration="4372000" />
-      <workItem from="1589889236213" duration="9786000" />
+      <workItem from="1589889236213" duration="14944000" />
     </task>
     <task id="LOCAL-00001" summary="readme değişti">
       <created>1585491198679</created>
@@ -523,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589230017891</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="üye ürün ekleme">
+      <created>1589916353440</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1589916353440</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -550,7 +371,8 @@
     <MESSAGE value="üye paneli oluşturuldu" />
     <MESSAGE value="üye bilgileri şifre güncelleme" />
     <MESSAGE value="üye yorumları listeleme ve silme" />
-    <option name="LAST_COMMIT_MESSAGE" value="üye yorumları listeleme ve silme" />
+    <MESSAGE value="üye ürün ekleme" />
+    <option name="LAST_COMMIT_MESSAGE" value="üye ürün ekleme" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="75" key="#Notifications" timestamp="1585491462129">
@@ -565,10 +387,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="883" y="166" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1589063814094" />
-    <state x="406" y="12" key="CommitChangelistDialog2" timestamp="1589230016471">
+    <state x="406" y="12" key="CommitChangelistDialog2" timestamp="1589916343122">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="406" y="12" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589230016471" />
+    <state x="406" y="12" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589916343122" />
     <state x="828" y="143" key="FileChooserDialogImpl" timestamp="1589832599095">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -585,10 +407,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="559" y="31" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582982890254" />
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1589230020070">
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1589916358254">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589230020070" />
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589916358254" />
     <state x="635" y="306" width="315" height="221" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1589832647393">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
