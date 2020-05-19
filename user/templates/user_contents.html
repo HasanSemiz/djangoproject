@@ -1,0 +1,104 @@
+{% extends "homebase.html" %}
+{% load static %}
+{% block title %}{{  setting.company }}{% endblock %}
+{% block keywords %}{{  setting.keywords }}{% endblock %}
+{% block description %}{{  setting.description }}{% endblock %}
+
+{% block head %}
+    <link rel="icon" sizes="32x32"   type="image/png" href='{{ setting.icon.url }}' />
+
+{% endblock %}
+
+
+{% block content %}
+  <div class="page-title" style="background-image: url({% static 'images/background01.jpg' %});">
+			<div class="inner">
+				<div class="container">
+					<div class="title">KULLANICI İLANI</div> <!-- end .title -->
+				</div> <!-- end .container -->
+			</div> <!-- end .inner -->
+		</div> <!-- end .page-title -->
+
+<div id="breadcrumb">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="/">ANASAYFA</a></li>
+                <li class="active">İLANLAR</li>
+            </ul>
+
+         </div>
+    </div>
+		<section class="section white">
+			<div class="inner">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-2">
+
+
+                            {% include "user_panel.html" %}
+
+
+                        </div> <!-- end .col-sm-7 -->
+
+                        <div class="column-spacer"></div>
+
+
+                        <div class="col-md-10">
+                            <div class="section-title">
+                                <h4 class="title">İlanlarım </h4>
+                            </div>
+
+                            <table class="-shopping-cart-table table">
+                                <tr>
+                                    <th class="text-left">Resim</th>
+                                    <th class="text-left">Model</th>
+                                    <th class="text-left">Marka</th>
+                                    <th class="text-left">Onay</th>
+                                    <th class="text-left">Galeri</th>
+                                    <th class="text-left">Tarih</th>
+                                    <th class="text-left">Detay</th>
+                                </tr>
+                                {% for rs in product %}
+                                <tr>
+                                    <th class="text-left">
+                                        <a href="/product/{{ rs.id }}/{{ rs.slug }}">
+                                        <img src="{{ rs.image.url }}" style="height: 50px; width: 70px;" ></a></th>
+                                    <th class="text-left">
+                                        <a href="/product/{{ rs.id }}/{{ rs.slug }}">
+                                            {{ rs.title }}</a></th>
+
+                                    <th class="text-left">{{rs.category.title}}</th>
+                                    <th class="text-left">{{rs.status}}</th>
+                                    <th class="text-left">
+                                        <a href="javascript:;" onclick="window.open('/user/contentaddimage/{{ rs.id }}','gallery','height=600,width=800,top=50,left=150')">Galeri</a>
+                                    </th>
+                                    <th class="text-left">{{rs.create_at}}</th>
+                                    <th class="text-left"><a class="button solid yellow size1" href="/user/contentedit/{{ rs.id }}">Düzenle</a></th>
+                                    <th class="text-left"><a onclick="return confirm('Silmek İstediğinize emin misiniz?')"
+                                                             class="button solid yellow size1" href="/user/contentdelete/{{ rs.id }}">Sil</a> </th>
+                                </tr>
+                                {% endfor %}
+                            </table>
+
+
+                            {% if messages %}
+                                {% for message in messages %}
+                                    <div class="alert alert-{{message.tags}}" role="alert">
+                                        {{ message }}
+                                    </div>
+                                {%endfor%}
+                            {% endif %}
+
+
+
+
+
+
+                        </div> <!-- end .col-sm-5 -->
+
+                    </div>
+                </div> <!-- end .container -->
+			</div> <!-- end .inner -->
+		</section> <!-- end .section -->
+{% endblock %}

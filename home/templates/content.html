@@ -1,100 +1,119 @@
 {% load static %}
 <script>
 
-  $(function() {
-    $("#query").autocomplete({
-      source: "/search_auto/",
-      select: function (event, ui) {
-        AutoCompleteSelectHandler(event, ui)
-      },
-      minLength: 2,
+    $(function() {
+        $("#query").autocomplete({
+            source: "/search_auto/",
+            select: function (event, ui) {
+                AutoCompleteSelectHandler(event, ui)
+            },
+            minLength: 2,
+        });
     });
-  });
 
-  function AutoCompleteSelectHandler(event, ui)
-  {
-    var selectedObj = ui.item;
-  }
+    function AutoCompleteSelectHandler(event, ui)
+    {
+        var selectedObj = ui.item;
+    }
 
 </script>
 <section class="section dark tiny">
-			<div class="inner">
-				<div class="container">
-					<div class="tabpanel border section-tab" role="tabpanel">
-						<ul class="nav nav-tabs" role="tablist">
-							<li role="presentation" class="active"><a href="#search-cars" aria-controls="search-cars" role="tab" data-toggle="tab">Search Cars</a></li>
-						</ul> <!-- end .nav-tabs -->
+    <div class="inner">
+        <div class="container">
+            <div class="tabpanel border section-tab" role="tabpanel">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#search-cars" aria-controls="search-cars" role="tab" data-toggle="tab">ARABA BUL</a></li>
+                    <li role="presentation"><a href="#sell-car" aria-controls="sell-car" role="tab" data-toggle="tab">SOSYAL MEDYA</a></li>
+                </ul> <!-- end .nav-tabs -->
 
 
 
-						<div class="tab-content">
-                            <div class="row">
-                              <div class="col-md-4">
-											 <form class="search-form" action="/search/" method="POST">
-                                             {% csrf_token %}
-                                             <input id="query" name="query" class="src-input" type="search"placeholder="Arama " >
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="search-cars">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <form class="search-form" action="/search/" method="POST">
+                                    {% csrf_token %}
+                                    <input id="query" name="query" class="src-input" type="search"placeholder="Arama " >
 
-                                             {% load mptt_tags %}
+                                    {% load mptt_tags %}
 
-                                             <select name="catid" id="catid" class="input search-categories">
-                                                 <option value="0">Arabalar</option>
-                                                {% recursetree category %}
-                                                {% if  node.is_leaf_node %}
-                                                       <li><a value="{{node.id}} }}">{{ node.title }}</a></li>
-                                                {% endif %}
-                                                {% if node.is_leaf_node %}
-                                                    <option value="{{node.id}}">{{node.title}}</option>
-                                                {%endif%}
-                                                {% if not node.is_leaf_node %}
-                                                    <optgroup label="{{node.title}}">
-                                                        {{children}}
-                                                    </optgroup>
-                                                {%endif%}
-                                                {% endrecursetree %}
-                                             </select>
-                                             <button type="submit"><i class="fa fa-search"></i></button>
+                                    <select name="catid" id="catid" class="input search-categories">
+                                        <option value="0">Arabalar</option>
+                                        {% recursetree category %}
+                                            {% if  node.is_leaf_node %}
+                                                <li><a value="{{node.id}} }}">{{ node.title }}</a></li>
+                                            {% endif %}
+                                            {% if node.is_leaf_node %}
+                                                <option value="{{node.id}}">{{node.title}}</option>
+                                            {%endif%}
+                                            {% if not node.is_leaf_node %}
+                                                <optgroup label="{{node.title}}">
+                                                    {{children}}
+                                                </optgroup>
+                                            {%endif%}
+                                        {% endrecursetree %}
+                                    </select>
+                                    <button type="submit"><i class="fa fa-search"></i></button>
 
-                                             </form>
-                              </div>
+                                </form>
                             </div>
 
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="sell-car">
+                        <div class="col-md-2">
+                            Sosyal Medyada Biz:
+                        </div>
+                        <div class="col-md-4">
 
-						</div> <!-- end .tab-content -->
-					</div> <!-- end .tabpanel -->
-				</div> <!-- end .container -->
-			</div> <!-- end .inner -->
+
+
+                            <div class="social-icons">
+                                <a href="{{ setting.instagram }}"><i class="fa fa-instagram">  keyoto.instagram</i></a></p>
+                                <a href="{{ setting.facebook }}"><i class="fa fa-facebook">  keyoto.facebook</i></a><br>
+                                <a href="{{ setting.twitter }}"><i class="fa fa-twitter">  keyoto.twitter</i></a>
+                            </div> <!-- end .social-icons -->
+                        </div>
+                    </div>
+
+
+                </div> <!-- end .tab-content -->
+            </div> <!-- end .tabpanel -->
+        </div> <!-- end .container -->
+    </div> <!-- end .inner -->
 </section> <!-- end .section -->
 
 <section class="section white">
-			<div class="inner">
-				<h1 class="main-heading">Son Model</h1>
-				<div id="featured-cars" class="owl-carousel featured-cars">
-					{% for rs in lastproducts %}
-                    <div class="item">
-						<div class="featured-car">
-							<div class="image">
-								<a href="/product/{{ rs.id }}/{{ rs.slug }}"><img src="{{ rs.image.url }}" alt="car" style="height: 200px" class="img-responsive"> </a>
-								<span class="sale-tag">Satılık</span>
-							</div> <!-- end .image -->
-							<div class="content">
-								<div class="clearfix">
-									<h5><a href="">{{ rs.title }}</a></h5>
-									<span class="price">${{ rs.price }}</span>
-								</div> <!-- end .clearfix -->
-								<div class="line"></div>
-								<p>{{ rs.description }}</p>
-							</div> <!-- end .content -->
-							<div class="details clearfix">
-								<div class="seats"><i class="icon-car-seat"></i>5</div>
-								<div class="fuel"><i class="icon-car-fuel"></i>{{ rs.yakit }}</div>
-								<div class="type"><i class="icon-car-door"></i>{{ rs.govde }}</div>
-							</div> <!-- end .details -->
-						</div> <!-- end .featured-car -->
-					</div> <!-- end .item -->
-                    {% endfor %}
-				</div> <!-- end .featured-cars -->
+    <div class="inner">
+        <h1 class="main-heading">Son Model</h1>
+        <div id="featured-cars" class="owl-carousel featured-cars">
+            {% for rs in lastproducts %}
+                <div class="item">
+                    <div class="featured-car">
+                        <div class="image">
+                            <a href="/product/{{ rs.id }}/{{ rs.slug }}"><img src="{{ rs.image.url }}" alt="car" style="height: 200px" class="img-responsive"> </a>
+                            <span class="sale-tag">Satılık</span>
+                        </div> <!-- end .image -->
+                        <div class="content">
+                            <div class="clearfix">
+                                <h5><a href="/product/{{ rs.id }}/{{ rs.slug }}">{{ rs.title }}</a></h5>
+                                <span class="price">${{ rs.price }}</span>
+                            </div> <!-- end .clearfix -->
+                            <div class="line"></div>
+                            <p>{{ rs.description }}</p>
+                        </div> <!-- end .content -->
+                        <div class="details clearfix">
+                            <div class="seats"><i class="icon-car-seat"></i>5</div>
+                            <div class="fuel"><i class="icon-car-fuel"></i>{{ rs.yakit }}</div>
+                            <div class="type"><i class="icon-car-door"></i>{{ rs.govde }}</div>
+                        </div> <!-- end .details -->
+                    </div> <!-- end .featured-car -->
+                </div> <!-- end .item -->
+            {% endfor %}
+        </div> <!-- end .featured-cars -->
 
-			</div> <!-- end .inner -->
+    </div> <!-- end .inner -->
 
 </section> <!-- end .section -->
 

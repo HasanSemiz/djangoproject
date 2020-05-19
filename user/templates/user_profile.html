@@ -93,8 +93,17 @@
 
                                                     <a href="/user/update" class="button solid yellow size1">Güncelleme</a>
                                                     <a href="/user/password" class="button solid yellow size1">Şifre Değiştirme</a>
+                                                    <p></p>
 
                                                 </div> <!-- end .item -->
+                                            {% if messages %}
+                                                {% for message in messages %}
+                                                    <div class="alert alert-{{message.tags}}" role="alert">
+                                                        {{ message }}
+                                                    </div>
+                                                {%endfor%}
+                                            {% endif %}
+
 
 
                                         </div> <!-- end .row -->
@@ -113,5 +122,6 @@
 					</div>
 				</div> <!-- end .container -->
 			</div> <!-- end .inner -->
+            </div>
 		</section> <!-- end .section -->
 {% endblock %}

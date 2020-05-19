@@ -9,6 +9,13 @@ urlpatterns = [
     path('password/',views.change_password,name='change_password'),
     path('comments/',views.comments,name='comments'),
     path('deletecomment/<int:id>',views.deletecomment,name='deletecomment'),
+
+    path('addcontent/',views.addcontent,name='addcontent'),
+    path('content/',views.contents,name='content'),
+    path('contentedit/<int:id>',views.contentedit,name='contentedit'),
+    path('contentdelete/<int:id>',views.contentdelete,name='deletecomment'),
+    path('contentaddimage/<int:id>', views.contentaddimage, name='contentaddimage'),
+
     #path('addcomment/<int:id>', views.addcomment, name='addcomment')
     # ex: /polls/5/
     #path('<int:question_id>/', views.detail, name='detail'),

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GALERİ</title>
+</head>
+<body>
+<h2>{{ content.title }}</h2>
+<hr>
+{% if messages %}
+    {% for message in messages %}
+       <div class="alert alert--{{ message.tags }}" role="alert">
+           {{ message|safe }}
+       </div>
+    {% endfor %}
+{% endif %}
+
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="hidden" name="content_id" id="id_content_id" value="{{ product.id }}">
+    <label for="id_title">Başlık:</label>
+    <input type="text" name="title" class="input" placeholder="Başlık" maxlength="50" id="id_title"></p>
+
+    <label for="id_image">Resim:</label>
+    <input type="file" name="image" class="input" placeholder="Resim" accept="image/*" id="id_image"></p>
+    <button class="primary-btn" type="submit">Resim Yükle</button>
+</form>
+
+
+<hr>
+<h4>Yüklenen Resimler</h4>
+{% for rs in images %}
+   <img src="{{ rs.image.url }}" height="200">
+{% endfor %}
+</body>
+</html>

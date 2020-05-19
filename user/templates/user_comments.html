@@ -49,7 +49,9 @@
                                 <div class="car-details alt">
 
                                     <div class="specifications clearfix">
+
                                         <h2>Yorumlar</h2>
+
 
                                         <img src="{% static 'images/details.png'%}" alt="background" class="bg">
                                         <div class="content">
@@ -78,6 +80,13 @@
                                                     </tr>
                                                     {% endfor %}
                                                 </table>
+                                             {% if messages %}
+                                            {% for message in messages %}
+                                                <div class="alert alert-{{message.tags}}" role="alert">
+                                                    {{ message }}
+                                                </div>
+                                            {%endfor%}
+                                        {% endif %}
 
 
 

@@ -1,0 +1,53 @@
+{% extends "homebase.html" %}
+{% load static %}
+{% block title %}{{  setting.company }}{% endblock %}
+{% block keywords %}{{  setting.keywords }}{% endblock %}
+{% block description %}{{  setting.description }}{% endblock %}
+
+{% block head %}
+    <link rel="icon" sizes="32x32"   type="image/png" href='{{ setting.icon.url }}' />
+
+{% endblock %}
+
+
+{% block content %}
+  <div class="page-title" style="background-image: url({% static 'images/background01.jpg' %});">
+			<div class="inner">
+				<div class="container">
+					<div class="title">MENU</div> <!-- end .title -->
+				</div> <!-- end .container -->
+			</div> <!-- end .inner -->
+		</div> <!-- end .page-title -->
+
+<div id="breadcrumb">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="/">ANASAYFA</a></li>
+                <li class="active">MENU</li>
+            </ul>
+
+         </div>
+    </div>
+
+        <div class="inner">
+            <div class="container">
+                <div>
+                 <h4>  <b> {{ content.title }}</b></h4><p></p>
+
+                </div>
+                <div class="">
+                    <img src="{{ content.image.url }}" height="300"  ><p></p>
+                </div>
+                <div class="">
+
+                    {{ content.detail|safe }}<p></p><p></p>
+
+
+                </div>
+
+
+                </div> <!-- end .container -->
+            </div> <!-- end .inner -->
+
+
+{% endblock %}

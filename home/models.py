@@ -77,7 +77,7 @@ class UserProfile(models.Model):
     phone = models.CharField(blank=True, max_length=150)
     address = models.CharField(blank=True, max_length=150)
     city = models.CharField(blank=True, max_length=150)
-    country = models.CharField(blank=True, max_length=150)
+    country = models.CharField(blank=True, max_length=15)
     image = models.ImageField(blank=True, upload_to='image/users/')
 
     def __str__(self):
