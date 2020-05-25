@@ -90,7 +90,7 @@ def product_detail(request,id,slug):
     category = Category.objects.all()
     menu = Menu.objects.all()
     product = Product.objects.get(pk=id)
-   # profile = UserProfile.objects.get(user_id=product.user_id)
+
     images = Images.objects.filter(product_id=id)
     comments =  Comment.objects.filter(product_id=id,status='True')
     context = {'product':product,
@@ -99,7 +99,7 @@ def product_detail(request,id,slug):
                'comments':comments,
                 'menu': menu,
                'setting': setting,
-              #  'profile':profile
+
                }
     return render(request,'product_detail.html',context)
 

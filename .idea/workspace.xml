@@ -2,8 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e3657a0-8b89-4ab4-b58b-9a26a1a0bf07" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/home/static/images/blog-post-image03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/static/images/team01.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/PSD/about-us.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/PSD/add-car-details.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/PSD/blog-post.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/PSD/blog.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/PSD/choose-specification.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/PSD/compare-details.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/PSD/compare.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/PSD/contact-details.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/PSD/contact-us.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/PSD/details-1.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/PSD/details.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/PSD/homepage.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/PSD/homepage1.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/PSD/homepage2.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/PSD/listing-grid-view.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/PSD/listing-list-view.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/PSD/pay-publish.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/PSD/photos-videos.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/PSD/shortcodes.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/automan/about-us.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/automan/add-car-details.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/automan/blog-post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/automan/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/automan/choose-specification.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/automan/compare-details.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/automan/compare.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/automan/contact-details.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/automan/contact-us.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/automan/details-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/automan/details.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/automan/homepage2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/automan/homepage3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/automan/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/automan/listing-grid-view.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/automan/listing-list-view.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/automan/pay-publish.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/automan/photos-videos.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/automan/shortcodes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/documentation/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/documentation/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/documentation/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/documentation/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/car/documentation/js/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/hakkimizda.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/hakkimizda.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/homebase.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/homebase.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +235,12 @@
       <workItem from="1590151649633" duration="1671000" />
       <workItem from="1590159827883" duration="267000" />
       <workItem from="1590160315474" duration="1050000" />
-      <workItem from="1590172463808" duration="2207000" />
+      <workItem from="1590172463808" duration="4242000" />
+      <workItem from="1590176817671" duration="9000" />
+      <workItem from="1590176972473" duration="2137000" />
+      <workItem from="1590179679463" duration="324000" />
+      <workItem from="1590351150629" duration="1194000" />
+      <workItem from="1590412037536" duration="4497000" />
     </task>
     <task id="LOCAL-00001" summary="readme değişti">
       <created>1585491198679</created>
@@ -352,7 +410,21 @@
       <option name="project" value="LOCAL" />
       <updated>1589932057027</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="hata">
+      <created>1590174694850</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1590174694850</updated>
+    </task>
+    <task id="LOCAL-00026" summary="hata oldu">
+      <created>1590174758302</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1590174758302</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,7 +453,9 @@
     <MESSAGE value="üye yorumları listeleme ve silme" />
     <MESSAGE value="üye ürün ekleme" />
     <MESSAGE value="son düzenlemeler yapıldı" />
-    <option name="LAST_COMMIT_MESSAGE" value="son düzenlemeler yapıldı" />
+    <MESSAGE value="hata" />
+    <MESSAGE value="hata oldu" />
+    <option name="LAST_COMMIT_MESSAGE" value="hata oldu" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="75" key="#Notifications" timestamp="1585491462129">
@@ -396,10 +470,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="883" y="166" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1589063814094" />
-    <state x="406" y="12" key="CommitChangelistDialog2" timestamp="1590174704254">
+    <state x="406" y="12" key="CommitChangelistDialog2" timestamp="1590174757143">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="406" y="12" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1590174704254" />
+    <state x="406" y="12" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1590174757143" />
     <state x="828" y="143" key="FileChooserDialogImpl" timestamp="1589832599095">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -416,10 +490,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="559" y="31" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582982890254" />
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1589932059605">
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1590174761068">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589932059605" />
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1590174761068" />
     <state x="635" y="306" width="315" height="221" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1589832647393">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

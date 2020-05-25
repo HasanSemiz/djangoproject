@@ -2,83 +2,86 @@
 {% load mptt_tags %}
 
 <header class="header">
-			<div class="container">
-				<div class="navigation clearfix">
-					<div class="logo"><a href="/"><img src="{% static 'images/logo1.png'%}" alt="Automan" class="img-responsive"></a></div> <!-- end .logo -->
+    <div class="container">
+        <div class="navigation clearfix">
+            <div class="logo"><a href="/"><img src="{% static 'images/logo1.png' %}" alt="Automan"
+                                               class="img-responsive"></a></div> <!-- end .logo -->
 
 
-					<nav class="main-nav">
-						<ul class="list-unstyled">
-							<li>
-								<a href="/">ANASAYFA</a>
-							</li>
-                            <li>
-                              {% block sidebar %}{% include "sidebar.html" %}{% endblock %}
-                            </li>
-                            <li>
-								<a href="/hakkimizda">HAKKIMIZDA</a>
+            <nav class="main-nav">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="/">ANASAYFA</a>
+                    </li>
+                    <li>
+                        {% block sidebar %}{% include "sidebar.html" %}{% endblock %}
+                    </li>
+                    <li>
+                        <a href="/hakkimizda">HAKKIMIZDA</a>
 
-							</li>
-							<li>
-								<a href="/referanslar">REFERANSLAR</a>
-                            </li>
-                            <li><a href="/iletisim">İLETİŞİM</a></li>
-                            <li>
-                                {% load mptt_tags %}
-
-
-                                <a href="/">MENU</a>
-                                <ul>
-                                {% if menu %}
-
-                                    {% recursetree menu %}
-
-                                        {% if  node.is_leaf_node %}
+                    </li>
+                    <li>
+                        <a href="/referanslar">REFERANSLAR</a>
+                    </li>
+                    <li><a href="/iletisim">İLETİŞİM</a></li>
+                    <li>
+                        {% load mptt_tags %}
 
 
-                                            <li><a href="/menu/{{ node.id }}/{{ node.slug }}">{{ node.title }}</a></li>
+                        <a href="/">MENU</a>
+                        <ul>
+                            {% if menu %}
+
+                                {% recursetree menu %}
+
+                                    {% if  node.is_leaf_node %}
 
 
-                                        {% endif %}
+                                        <li><a href="/menu/{{ node.id }}/{{ node.slug }}">{{ node.title }}</a></li>
 
 
-                                        {% if not node.is_leaf_node %}
-
-                                            <li><a href="/menu/{{ node.id }}/{{ node.slug }}">{{ node.title }}</a>
-                                                <ul>{{ children }} </ul></li>
-
-                                        {% endif %}
-
-                                    {% endrecursetree %}
-                                {% endif %}
-                                </ul>
-                            </li>
-
-
-                            <li>
-
-                                    {% if user.id is not None %}
-                                        <a href="/user/"><b style="color: #f0ad4e"><i class="ion-ios-person">   </i> {{ user.first_name }} {{ user.last_name }}</b></a>
-                                        <ul>
-                                            <li><a href="/user">Hesabım</a></li>
-                                            <li><a href="/user/comments">Yorumlar</a></li>
-                                            <li><a href="/user/content">İlanlar</a></li>
-                                            <li><a href="/user/addcontent">İlan Ver</a></li>
-                                            <li><a href="/logout/"><b>ÇIKIŞ</b></a></li>
-                                        </ul>
-
-
-                                    {% else %}
-                                        <a href="/login/"><b style="color: #f0ad4e">GİRİŞ</b></a>
-                                        <a href="/signup/"><b style="color: #f0ad4e">KAYIT OL</b></a>
                                     {% endif %}
 
 
-                            </li>
+                                    {% if not node.is_leaf_node %}
 
-						</ul>
-					</nav> <!-- end .main-nav -->
-					<a href="" class="responsive-menu-open"><i class="fa fa-bars"></i></a>
-				</div> <!-- end .navigation -->
-			</div> <!-- end .container -->
-		</header> <!-- end .header -->
+                                        <li><a href="/menu/{{ node.id }}/{{ node.slug }}">{{ node.title }}</a>
+                                            <ul>{{ children }} </ul>
+                                        </li>
+
+                                    {% endif %}
+
+                                {% endrecursetree %}
+                            {% endif %}
+                        </ul>
+                    </li>
+
+
+                    <li>
+
+                        {% if user.id is not None %}
+                            <a href="/user/"><b style="color: #f0ad4e"><i
+                                    class="ion-ios-person"> </i> {{ user.first_name }} {{ user.last_name }}</b></a>
+                            <ul>
+                                <li><a href="/user">Hesabım</a></li>
+                                <li><a href="/user/comments">Yorumlar</a></li>
+                                <li><a href="/user/content">İlanlar</a></li>
+                                <li><a href="/user/addcontent">İlan Ver</a></li>
+                                <li><a href="/logout/"><b>ÇIKIŞ</b></a></li>
+                            </ul>
+
+
+                        {% else %}
+                            <a href="/login/"><b style="color: #f0ad4e">GİRİŞ</b></a>
+                            <a href="/signup/"><b style="color: #f0ad4e">KAYIT OL</b></a>
+                        {% endif %}
+
+
+                    </li>
+
+                </ul>
+            </nav> <!-- end .main-nav -->
+            <a href="" class="responsive-menu-open"><i class="fa fa-bars"></i></a>
+        </div> <!-- end .navigation -->
+    </div> <!-- end .container -->
+</header> <!-- end .header -->

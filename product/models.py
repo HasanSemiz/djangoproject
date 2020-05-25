@@ -159,7 +159,6 @@ class Comment(models.Model):
     )
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-   # userprofile = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
     subject = models.CharField(max_length=50)
     comment = models.TextField(max_length=200)
     status = models.CharField(max_length=10,choices=STATUS, default='New')
