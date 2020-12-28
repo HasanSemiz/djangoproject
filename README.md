@@ -1,1 +1,1 @@
-"#Django Araba Alim Satim Projesi" 
+"Kullanıcıların araç alım satım yapabileceği website" 
